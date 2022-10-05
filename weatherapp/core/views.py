@@ -41,4 +41,4 @@ def home(request):
         # weather_data['status'] = soup.find('span', attrs={'id':'wob_dcp'}).text
         # weather_data['temp'] = soup.find('span', attrs={'id':'wob_tm'}).text
            
-    return render(request, 'home.html', {'weather': weather_data})
+    return render(request, 'home.html', {'weather_data': weather_data})
